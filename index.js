@@ -12,6 +12,6 @@ function increaseRankBy(n){
 
     for(let x = 0; x < listElement.length ; x++){
       listElement[x].innerHTML = parseInt(listElement[x].innerHTML) + n;
-    }
-  }
+    };
+  };
 };
