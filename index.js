@@ -8,6 +8,10 @@ function increaseRankBy(n){
   const list = document.querySelectorAll('.ranked-list');
 
   for(let i = 0 ; i < list.length ; i++){
-    parseInt(list[i].innerHTML) + n;
-  }
+    let listElement = list[i].children
+
+    for(let x = 0; x < listElement.length ; x++){
+      listElement.innerHTML = parseInt(listElement[x].innerHTML) + n;
+    };
+  };
 };
