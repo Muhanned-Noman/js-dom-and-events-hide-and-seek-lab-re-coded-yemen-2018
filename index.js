@@ -15,3 +15,12 @@ function increaseRankBy(n){
     };
   };
 };
+function deepestChild(){
+  let root = document.getElementById('grand-node');
+  let rootSecondLevel = root.children[0];
+  while(rootSecondLevel){
+    root = rootSecondLevel;
+    rootSecondLevel = root.children[0]
+  }
+  return root;
+};
